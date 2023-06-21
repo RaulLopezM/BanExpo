@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Home{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}
+
+            <header>
+                <nav>
+                    <div class="nav-wrapper blue">
+                        <a href="#" class="brand-logo center"> BanExpo <i class="fa-solid fa-vault" style="color: #0d1868;"></i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="sass.html">Contactanos</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            {% block contenido %} {% endblock %}
+
+
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-3.7.0.js') }}"></script>
+            <script src="{{ asset('js/materialize.js') }}"></script>
+            <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+            <script src="https://kit.fontawesome.com/8ca6a2f253.js" crossorigin="anonymous"></script>
+            {% include ':js:init.js.twig' %}
+        {% endblock %}
+    </body>
+</html>
