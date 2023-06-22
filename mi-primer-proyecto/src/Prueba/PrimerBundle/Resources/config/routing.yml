@@ -1,3 +1,10 @@
 prueba_primer_homepage:
     path:     /Prueba
     defaults: { _controller:PruebaPrimerBundle:Default:index }
+
+insertar_movimientos:
+    path: /insertar-mov
+    defaults: { _controller:PruebaPrimerBundle:Default:insertarMov}
+
+ingresar_cuenta:
+    path: /ingresar-cuenta

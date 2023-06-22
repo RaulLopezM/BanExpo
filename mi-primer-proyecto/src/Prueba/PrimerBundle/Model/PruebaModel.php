@@ -19,6 +19,8 @@ class PruebaModel{
         return $result;
     }
     public function  getMovimientos(){
+
+        $cliente = "7";
         $qry = '';
         $qry .= 'SELECT';
         $qry .= '"Cliente",';
@@ -26,16 +28,21 @@ class PruebaModel{
         $qry .= '"Movimientos",';
         $qry .='"Cantidad"';
         $qry .=' FROM "QB"."vw_qb_Movimientos"';
+        $qry .=' WHERE "NoCuenta"=';
+        $qry.="$cliente";
         $result = $this->SQLModel->executeQuery($qry);
         return $result;
     }
-    public function insDeposito (){
+    public function insDeposito ($datos){
+        $tipoTrans =$datos['tipoTrans'];
+        $cantidad = $datos['cantidad'];
         $qry = '';
-        $qry .= 'INSERT INTO';
-        $qry .= '"Nombre",';
-        $qry .= '"Apellidos",';
-        $qry .= '"Correo"';
-        $qry .= 'FROM "QB"."tb_qb_Clientes" LIMIT 20';
+        $qry .= 'INSERT ';
+        $qry .= 'INTO "QB"."tb_qb_Transacciones"';
+        $qry .= '("Fecha","Cantidad","TipoTrans","NoCuenta") ';
+        $qry .= 'VALUES(';
+        $qry .= "now(),$cantidad,'$tipoTrans',7)";
+
         $result = $this->SQLModel->executeQuery($qry);
         return $result;
     }

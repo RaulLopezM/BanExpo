@@ -1,0 +1,21 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: symfony
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    PGSQL_SAS:
+        db_name: banco
+        db_user: postgres
+        db_password: ixpo
+        #Usar localhost cuando se usara el dominio de.infoexpo.com.mx
+        #db_server:         localhost
+        db_server: localhost
+        db_port: 5432

@@ -22,13 +22,32 @@
     </tbody>
 
 </table>  #}
+{% set asset_path = 'resources/prueba/' %}
 
 {% block contenido%}
     <div class="row">
         <h2>Bienvenido </h2>
-        <button class="btn waves-effect waves-light right" type="" name="action">Historial
-            <i class="fa-regular fa-rectangle-list" style="color: #ffffff;"></i>
-        </button>
+    </div>
+
+    <div class="container ">
+        <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title center ">Ingrese su numero de cuenta </span>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="cuenta" type="number"name ="cuenta" class="validate">
+                                <label for="noCu">Numero de cuenta <i class="fa-solid fa-address-card" style="color: #ffffff;"></i></label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light" id="btnCargar">Aceptar
+                            <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                        </button>
+                        <button class="btn waves-effect waves-light right " name="">Limpiar
+                            <i class="fa-regular fa-trash-can" style="color: #ffffff;"></i>
+                        </button>
+                </div>
+            </div>
     </div>
 
 
@@ -37,27 +56,15 @@
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Depositos <i class="fa-regular fa-credit-card" style="color: #ffffff;"></i></span>
-                    <form>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="password" type="number" class="validate">
-                                <label for="password">Numero de cuenta <i class="fa-solid fa-address-card" style="color: #ffffff;"></i></label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="number" class="validate">
+                                <input id="cantidad" type="text" name="cantidad" class="validate">
                                 <label for="email">Cantidad</label>
                             </div>
                         </div>
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Aceptar
+                            <a class="btn waves-effect waves-light" id="btnDepositar">Aceptar
                             <i class="fa-solid fa-check" style="color: #ffffff;"></i>
-                        </button>
-                        <button class="btn waves-effect waves-light" type="" name="action">Limpiar
-                            <i class="fa-regular fa-trash-can" style="color: #ffffff;"></i>
-                        </button>
-
-                    </form>
+                        </a>
                 </div>
             </div>
         </div>
@@ -68,20 +75,14 @@
                     <form>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="password" type="number" class="validate">
-                                <label for="password">Numero de cuenta <i class="fa-solid fa-address-card" style="color: #ffffff;"></i></label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
                                 <input id="email" type="number" class="validate">
                                 <label for="email">Cantidad</label>
                             </div>
                         </div>
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Aceptar
+                        <a class="btn waves-effect waves-light">Aceptar
                             <i class="fa-solid fa-check" style="color: #ffffff;"></i>
-                        </button>
-                        <button class="btn waves-effect waves-light" type="" name="action">Limpiar
+                        </a>
+                        <button class="btn waves-effect waves-light"  name="">Limpiar
                             <i class="fa-regular fa-trash-can" style="color: #ffffff;"></i>
                         </button>
                     </form>
@@ -92,9 +93,11 @@
     <div class="container">
         <div class="row">
             <div class="card col s12">
-                <table id="tb_historial" >
+                <table id="tb_historial" class="striped" >
                     <thead>
-                    <h3>Historial de movimientos</h3>
+                    <h3>Historial de movimientos  </h3>
+                    <h5>{{ data['data'][0].Cliente}}</h5>
+                    <h4 class="right">Saldo </h4>
                     <tr>
                         <th>Numero de cuenta</th>
                         <th>Cliente</th>
@@ -104,18 +107,20 @@
                     </thead>
 
                     <tbody>
-                    {% for movimiento in data['data'] %}
-                    <tr>
-                        <td>{{ movimiento.NoCuenta }}</td>
-                        <td>{{ movimiento.Cliente }}</td>
-                        <td>{{ movimiento.Movimientos }}</td>
-                        <td>{{ movimiento.Cantidad }}</td>
-                    </tr>
-                    {% endfor %}
+
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    </div>
 
+{% endblock %}
+{% block javascripts%}
+        {{ parent() }}
+        <script>
+            var url_getMovimientos= "{{ path('insertar_movimientos') }}"
+
+        </script>
+        <script type="text/javascript" src="{{ asset(asset_path ~ 'primerBundle.js') }}"></script>
 {% endblock %}
