@@ -105,17 +105,14 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Prueba\\PrimerBundle\\Controller\\DefaultController::indexAction',  '_route' => 'prueba_primer_homepage',);
         }
 
-        if (0 === strpos($pathinfo, '/in')) {
-            // insertar_movimientos
-            if ($pathinfo === '/insertar-mov') {
-                return array (  '_controller' => 'Prueba\\PrimerBundle\\Controller\\DefaultController::insertarMovAction',  '_route' => 'insertar_movimientos',);
-            }
+        // insertar_movimientos
+        if ($pathinfo === '/insertar-mov') {
+            return array (  '_controller' => 'Prueba\\PrimerBundle\\Controller\\DefaultController::insertarMovAction',  '_route' => 'insertar_movimientos',);
+        }
 
-            // ingresar_cuenta
-            if ($pathinfo === '/ingresar-cuenta') {
-                return array('_route' => 'ingresar_cuenta');
-            }
-
+        // get_movimientos
+        if ($pathinfo === '/movimientos') {
+            return array (  '_controller' => 'Prueba\\PrimerBundle\\Controller\\DefaultController::getMovimientosAction',  '_route' => 'get_movimientos',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

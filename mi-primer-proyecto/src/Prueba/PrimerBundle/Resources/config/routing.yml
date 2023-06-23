@@ -6,5 +6,10 @@ insertar_movimientos:
     path: /insertar-mov
     defaults: { _controller:PruebaPrimerBundle:Default:insertarMov}
 
-ingresar_cuenta:
-    path: /ingresar-cuenta
+get_movimientos:
+    path: /movimientos
+    defaults: { _controller:PruebaPrimerBundle:Default:getMovimientos}
+
+get_saldo:
+    path: /saldo
+    defaults: { _controller:PruebaPrimerBundle:Default:getSaldo}

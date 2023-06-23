@@ -22,32 +22,32 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1eeaccedb675998c1a5e9225ac739d02ac799434ecf96c51357f6833a0dcce90 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1eeaccedb675998c1a5e9225ac739d02ac799434ecf96c51357f6833a0dcce90->enter($__internal_1eeaccedb675998c1a5e9225ac739d02ac799434ecf96c51357f6833a0dcce90_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaPrimerBundle:Default:index.html.twig"));
+        $__internal_c0ef30faa3d63d08f17f6849362fdc216c8e93477027b5863e658e7ea090aa88 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c0ef30faa3d63d08f17f6849362fdc216c8e93477027b5863e658e7ea090aa88->enter($__internal_c0ef30faa3d63d08f17f6849362fdc216c8e93477027b5863e658e7ea090aa88_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaPrimerBundle:Default:index.html.twig"));
 
-        $__internal_b2fa32aa51609de477fe02a933c2acf33699ffd9e60868a4215992696501fd7d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b2fa32aa51609de477fe02a933c2acf33699ffd9e60868a4215992696501fd7d->enter($__internal_b2fa32aa51609de477fe02a933c2acf33699ffd9e60868a4215992696501fd7d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaPrimerBundle:Default:index.html.twig"));
+        $__internal_40d19c5d1a0dc44434df9dd921de67692c159b236604455da0975aa9b122e8f0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_40d19c5d1a0dc44434df9dd921de67692c159b236604455da0975aa9b122e8f0->enter($__internal_40d19c5d1a0dc44434df9dd921de67692c159b236604455da0975aa9b122e8f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PruebaPrimerBundle:Default:index.html.twig"));
 
         // line 25
         $context["asset_path"] = "resources/prueba/";
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1eeaccedb675998c1a5e9225ac739d02ac799434ecf96c51357f6833a0dcce90->leave($__internal_1eeaccedb675998c1a5e9225ac739d02ac799434ecf96c51357f6833a0dcce90_prof);
+        $__internal_c0ef30faa3d63d08f17f6849362fdc216c8e93477027b5863e658e7ea090aa88->leave($__internal_c0ef30faa3d63d08f17f6849362fdc216c8e93477027b5863e658e7ea090aa88_prof);
 
         
-        $__internal_b2fa32aa51609de477fe02a933c2acf33699ffd9e60868a4215992696501fd7d->leave($__internal_b2fa32aa51609de477fe02a933c2acf33699ffd9e60868a4215992696501fd7d_prof);
+        $__internal_40d19c5d1a0dc44434df9dd921de67692c159b236604455da0975aa9b122e8f0->leave($__internal_40d19c5d1a0dc44434df9dd921de67692c159b236604455da0975aa9b122e8f0_prof);
 
     }
 
     // line 27
     public function block_contenido($context, array $blocks = array())
     {
-        $__internal_3a4aefcc3ce954c59910e018f380504772829e37ee6412312192042998e6dd91 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3a4aefcc3ce954c59910e018f380504772829e37ee6412312192042998e6dd91->enter($__internal_3a4aefcc3ce954c59910e018f380504772829e37ee6412312192042998e6dd91_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenido"));
+        $__internal_dfc385daa149f2422e1d9027286b673354217d0bd813c39bdbc3e9327f954494 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_dfc385daa149f2422e1d9027286b673354217d0bd813c39bdbc3e9327f954494->enter($__internal_dfc385daa149f2422e1d9027286b673354217d0bd813c39bdbc3e9327f954494_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenido"));
 
-        $__internal_2f96de747c40e8da1a2e78068f96241a1bc64034e8941e1efb8bcc1f267091f0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2f96de747c40e8da1a2e78068f96241a1bc64034e8941e1efb8bcc1f267091f0->enter($__internal_2f96de747c40e8da1a2e78068f96241a1bc64034e8941e1efb8bcc1f267091f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenido"));
+        $__internal_525d77fd3680cb465cdae8b0e50eca80f473e17ff6aa4b6b8b879f25ddb26703 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_525d77fd3680cb465cdae8b0e50eca80f473e17ff6aa4b6b8b879f25ddb26703->enter($__internal_525d77fd3680cb465cdae8b0e50eca80f473e17ff6aa4b6b8b879f25ddb26703_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenido"));
 
         // line 28
         echo "    <div class=\"row\">
@@ -65,17 +65,14 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
                                 <label for=\"noCu\">Numero de cuenta <i class=\"fa-solid fa-address-card\" style=\"color: #ffffff;\"></i></label>
                             </div>
                         </div>
-                        <button class=\"btn waves-effect waves-light\" id=\"btnCargar\">Aceptar
+                        <a class=\"btn waves-effect waves-light\" id=\"btnCargar\">Aceptar
                             <i class=\"fa-solid fa-check\" style=\"color: #ffffff;\"></i>
-                        </button>
-                        <button class=\"btn waves-effect waves-light right \" name=\"\">Limpiar
-                            <i class=\"fa-regular fa-trash-can\" style=\"color: #ffffff;\"></i>
-                        </button>
+                        </a>
                 </div>
             </div>
     </div>
 
-
+    <h3 class=\"center\">Acciones</h3>
     <div class=\"row\">
         <div class=\"col s12 m6\">
             <div class=\"card blue-grey darken-1\">
@@ -100,35 +97,28 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
                     <form>
                         <div class=\"row\">
                             <div class=\"input-field col s12\">
-                                <input id=\"email\" type=\"number\" class=\"validate\">
-                                <label for=\"email\">Cantidad</label>
+                                <input id=\"cantidadR\" type=\"number\" class=\"validate\">
+                                <label for=\"cantidadR\">Cantidad</label>
                             </div>
                         </div>
-                        <a class=\"btn waves-effect waves-light\">Aceptar
+                        <a class=\"btn waves-effect waves-light\" id=\"btnRetirar\">Aceptar
                             <i class=\"fa-solid fa-check\" style=\"color: #ffffff;\"></i>
                         </a>
-                        <button class=\"btn waves-effect waves-light\"  name=\"\">Limpiar
-                            <i class=\"fa-regular fa-trash-can\" style=\"color: #ffffff;\"></i>
-                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class=\"container\">
+    <div>
         <div class=\"row\">
             <div class=\"card col s12\">
                 <table id=\"tb_historial\" class=\"striped\" >
                     <thead>
-                    <h3>Historial de movimientos  </h3>
-                    <h5>";
-        // line 99
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "data", array(), "array"), 0, array(), "array"), "Cliente", array()), "html", null, true);
-        echo "</h5>
+                    <h3>Historial de movimientos </h3>
+                    <h5 id=\"nomCliente\"></h5>
                     <h4 class=\"right\">Saldo </h4>
                     <tr>
                         <th>Numero de cuenta</th>
-                        <th>Cliente</th>
                         <th>Movimiento</th>
                         <th>Cantidad</th>
                     </tr>
@@ -143,41 +133,44 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
     </div>
     </div>";
         
-        $__internal_2f96de747c40e8da1a2e78068f96241a1bc64034e8941e1efb8bcc1f267091f0->leave($__internal_2f96de747c40e8da1a2e78068f96241a1bc64034e8941e1efb8bcc1f267091f0_prof);
+        $__internal_525d77fd3680cb465cdae8b0e50eca80f473e17ff6aa4b6b8b879f25ddb26703->leave($__internal_525d77fd3680cb465cdae8b0e50eca80f473e17ff6aa4b6b8b879f25ddb26703_prof);
 
         
-        $__internal_3a4aefcc3ce954c59910e018f380504772829e37ee6412312192042998e6dd91->leave($__internal_3a4aefcc3ce954c59910e018f380504772829e37ee6412312192042998e6dd91_prof);
+        $__internal_dfc385daa149f2422e1d9027286b673354217d0bd813c39bdbc3e9327f954494->leave($__internal_dfc385daa149f2422e1d9027286b673354217d0bd813c39bdbc3e9327f954494_prof);
 
     }
 
-    // line 119
+    // line 112
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_d4ed5375ca42f79c51b34e38e07972e2e74b9ddbec3c81220ed77f4abcb89746 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d4ed5375ca42f79c51b34e38e07972e2e74b9ddbec3c81220ed77f4abcb89746->enter($__internal_d4ed5375ca42f79c51b34e38e07972e2e74b9ddbec3c81220ed77f4abcb89746_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_ae9c54175fc4e6452e469fc7723ed3c39274198a7930ba66844cd8505d561c0e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ae9c54175fc4e6452e469fc7723ed3c39274198a7930ba66844cd8505d561c0e->enter($__internal_ae9c54175fc4e6452e469fc7723ed3c39274198a7930ba66844cd8505d561c0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_516998250bf02c5e47f79677f4089f20cedb01f0092ebd43f0ce624910ecd5fa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_516998250bf02c5e47f79677f4089f20cedb01f0092ebd43f0ce624910ecd5fa->enter($__internal_516998250bf02c5e47f79677f4089f20cedb01f0092ebd43f0ce624910ecd5fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_5664532056cdfc97b0d60a586c3517da59fe3647958ea5a8691da02342cfdf88 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5664532056cdfc97b0d60a586c3517da59fe3647958ea5a8691da02342cfdf88->enter($__internal_5664532056cdfc97b0d60a586c3517da59fe3647958ea5a8691da02342cfdf88_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 120
+        // line 113
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
         <script>
-            var url_getMovimientos= \"";
-        // line 122
+            var url_setMovimientos= \"";
+        // line 115
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("insertar_movimientos");
         echo "\"
-           
+            var url_getMovimientos= \"";
+        // line 116
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("get_movimientos");
+        echo "\"
         </script>
         <script type=\"text/javascript\" src=\"";
-        // line 125
+        // line 118
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl((($context["asset_path"] ?? $this->getContext($context, "asset_path")) . "primerBundle.js")), "html", null, true);
         echo "\"></script>";
         
-        $__internal_516998250bf02c5e47f79677f4089f20cedb01f0092ebd43f0ce624910ecd5fa->leave($__internal_516998250bf02c5e47f79677f4089f20cedb01f0092ebd43f0ce624910ecd5fa_prof);
+        $__internal_5664532056cdfc97b0d60a586c3517da59fe3647958ea5a8691da02342cfdf88->leave($__internal_5664532056cdfc97b0d60a586c3517da59fe3647958ea5a8691da02342cfdf88_prof);
 
         
-        $__internal_d4ed5375ca42f79c51b34e38e07972e2e74b9ddbec3c81220ed77f4abcb89746->leave($__internal_d4ed5375ca42f79c51b34e38e07972e2e74b9ddbec3c81220ed77f4abcb89746_prof);
+        $__internal_ae9c54175fc4e6452e469fc7723ed3c39274198a7930ba66844cd8505d561c0e->leave($__internal_ae9c54175fc4e6452e469fc7723ed3c39274198a7930ba66844cd8505d561c0e_prof);
 
     }
 
@@ -193,7 +186,7 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
 
     public function getDebugInfo()
     {
-        return array (  174 => 125,  168 => 122,  163 => 120,  154 => 119,  126 => 99,  53 => 28,  44 => 27,  34 => 1,  32 => 25,  11 => 1,);
+        return array (  167 => 118,  162 => 116,  158 => 115,  153 => 113,  144 => 112,  53 => 28,  44 => 27,  34 => 1,  32 => 25,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -248,17 +241,14 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
                                 <label for=\"noCu\">Numero de cuenta <i class=\"fa-solid fa-address-card\" style=\"color: #ffffff;\"></i></label>
                             </div>
                         </div>
-                        <button class=\"btn waves-effect waves-light\" id=\"btnCargar\">Aceptar
+                        <a class=\"btn waves-effect waves-light\" id=\"btnCargar\">Aceptar
                             <i class=\"fa-solid fa-check\" style=\"color: #ffffff;\"></i>
-                        </button>
-                        <button class=\"btn waves-effect waves-light right \" name=\"\">Limpiar
-                            <i class=\"fa-regular fa-trash-can\" style=\"color: #ffffff;\"></i>
-                        </button>
+                        </a>
                 </div>
             </div>
     </div>
 
-
+    <h3 class=\"center\">Acciones</h3>
     <div class=\"row\">
         <div class=\"col s12 m6\">
             <div class=\"card blue-grey darken-1\">
@@ -283,32 +273,28 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
                     <form>
                         <div class=\"row\">
                             <div class=\"input-field col s12\">
-                                <input id=\"email\" type=\"number\" class=\"validate\">
-                                <label for=\"email\">Cantidad</label>
+                                <input id=\"cantidadR\" type=\"number\" class=\"validate\">
+                                <label for=\"cantidadR\">Cantidad</label>
                             </div>
                         </div>
-                        <a class=\"btn waves-effect waves-light\">Aceptar
+                        <a class=\"btn waves-effect waves-light\" id=\"btnRetirar\">Aceptar
                             <i class=\"fa-solid fa-check\" style=\"color: #ffffff;\"></i>
                         </a>
-                        <button class=\"btn waves-effect waves-light\"  name=\"\">Limpiar
-                            <i class=\"fa-regular fa-trash-can\" style=\"color: #ffffff;\"></i>
-                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class=\"container\">
+    <div>
         <div class=\"row\">
             <div class=\"card col s12\">
                 <table id=\"tb_historial\" class=\"striped\" >
                     <thead>
-                    <h3>Historial de movimientos  </h3>
-                    <h5>{{ data['data'][0].Cliente}}</h5>
+                    <h3>Historial de movimientos </h3>
+                    <h5 id=\"nomCliente\"></h5>
                     <h4 class=\"right\">Saldo </h4>
                     <tr>
                         <th>Numero de cuenta</th>
-                        <th>Cliente</th>
                         <th>Movimiento</th>
                         <th>Cantidad</th>
                     </tr>
@@ -327,8 +313,8 @@ class __TwigTemplate_fcd932eb310839ea05d3587d2392f12f608d0454f346a02ce2dad7e5891
 {% block javascripts%}
         {{ parent() }}
         <script>
-            var url_getMovimientos= \"{{ path('insertar_movimientos') }}\"
-           
+            var url_setMovimientos= \"{{ path('insertar_movimientos') }}\"
+            var url_getMovimientos= \"{{ path('get_movimientos') }}\"
         </script>
         <script type=\"text/javascript\" src=\"{{ asset(asset_path ~ 'primerBundle.js') }}\"></script>
 {% endblock %}

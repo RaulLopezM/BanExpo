@@ -18,9 +18,8 @@ class PruebaModel{
         $result = $this->SQLModel->executeQuery($qry);
         return $result;
     }
-    public function  getMovimientos(){
+    public function  getMovimientos($nocuenta){
 
-        $cliente = "7";
         $qry = '';
         $qry .= 'SELECT';
         $qry .= '"Cliente",';
@@ -28,20 +27,20 @@ class PruebaModel{
         $qry .= '"Movimientos",';
         $qry .='"Cantidad"';
         $qry .=' FROM "QB"."vw_qb_Movimientos"';
-        $qry .=' WHERE "NoCuenta"=';
-        $qry.="$cliente";
+        $qry .=' WHERE "NoCuenta"='.$nocuenta;
         $result = $this->SQLModel->executeQuery($qry);
         return $result;
     }
     public function insDeposito ($datos){
         $tipoTrans =$datos['tipoTrans'];
         $cantidad = $datos['cantidad'];
+        $noCuenta = $datos['noCuenta'];
         $qry = '';
         $qry .= 'INSERT ';
         $qry .= 'INTO "QB"."tb_qb_Transacciones"';
         $qry .= '("Fecha","Cantidad","TipoTrans","NoCuenta") ';
         $qry .= 'VALUES(';
-        $qry .= "now(),$cantidad,'$tipoTrans',7)";
+        $qry .= "now(),$cantidad,'$tipoTrans',$noCuenta) returning *";
 
         $result = $this->SQLModel->executeQuery($qry);
         return $result;
@@ -55,6 +54,18 @@ class PruebaModel{
         $qry .= 'FROM "QB"."tb_qb_Clientes" LIMIT 20';
         $result = $this->SQLModel->executeQuery($qry);
         return $result;
+    }
+    public function getSaldo($saldo){
+
+        $qry = '';
+        $qry .= 'SELECT';
+        $qry .= '"Cliente",';
+        $qry .= '"Saldo"';
+        $qry .= 'FROM "QB"."vw_qb_estadosaldo"';
+        $qry .=' WHERE "NoCuenta"='.$saldo;
+        $result = $this->SQLModel->executeQuery($qry);
+        return $result;
+
     }
 }
 

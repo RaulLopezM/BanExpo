@@ -22,7 +22,6 @@ class DefaultController extends Controller{
     {
         $resultVisitante = $this->PruebaModel->getVisitante();
 
-        $resultMovimiento = $this->PruebaModel->getMovimientos();
 
 
 
@@ -49,7 +48,17 @@ class DefaultController extends Controller{
             }
         ]');
 
-        return $this->render('PruebaPrimerBundle:Default:index.html.twig',array('data' => $resultMovimiento));
+        return $this->render('PruebaPrimerBundle:Default:index.html.twig');
+
+    }
+    public function getMovimientosAction(Request $noCuenta){
+
+        $post = $noCuenta->getContent();
+        $post = json_decode($post, true);
+
+        $result=$this->PruebaModel->getMovimientos($post['ncuenta']);
+
+        return $this->jsonResponse($result);
 
     }
     public function insertarMovAction(Request $request)
@@ -59,6 +68,11 @@ class DefaultController extends Controller{
         $result=$this->PruebaModel->insDeposito($post);
 
         return $this->jsonResponse($result);
+    }
+    public function getSaldoAction(Request $saldo){
+        $post = $saldo->getContent();
+        $post = json_decode($post,true);
+        $result = $this->PruebaModel->getSaldo();
     }
     protected function jsonResponse($data)
     {
